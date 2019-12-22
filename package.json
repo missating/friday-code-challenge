@@ -17,7 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lint:scss": "stylelint 'src/**/*.scss'"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -44,7 +45,10 @@
     "eslint-plugin-prettier": "^3.1.2",
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "stylelint": "^12.0.0",
+    "stylelint-config-sass-guidelines": "^6.2.0",
+    "stylelint-scss": "^3.13.0"
   },
   "repository": {
     "type": "git",
