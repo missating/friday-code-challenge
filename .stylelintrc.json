@@ -1,7 +1,11 @@
 {
-  "extends": "stylelint-config-sass-guidelines",
+  "extends": [
+    "stylelint-config-sass-guidelines",
+    "stylelint-prettier/recommended"
+  ],
   "plugins": ["stylelint-scss"],
   "rules": {
+    "prettier/prettier": true,
     "color-hex-case": "upper",
     "order/properties-alphabetical-order": null,
     "color-hex-length": "short",
@@ -35,7 +39,7 @@
         "ignore": ["after-comment"]
       }
     ],
-    "max-nesting-depth": 3,
+    "max-nesting-depth": 5,
     "property-no-vendor-prefix": null
   }
 }
