@@ -2,6 +2,7 @@
   width: 100%;
   border-bottom: 1px solid #CCC;
   cursor: pointer;
+  background-color: #000;
 
   &__content {
     width: 80%;
@@ -13,6 +14,7 @@
 
     a {
       text-decoration: none;
+      color: #FFF;
     }
   }
 }
