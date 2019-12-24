@@ -1,11 +1,15 @@
 // third-party libraries
 import React from 'react';
 
-// styles
+import ErrorBoundary from '../ErrorBoundary';
 
 // routes
 import Routes from '../../routes';
 
-const App = () => <Routes />;
+const App = () => (
+  <ErrorBoundary>
+    <Routes />
+  </ErrorBoundary>
+);
 
 export default App;
