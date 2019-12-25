@@ -7,11 +7,13 @@ import ErrorBoundary from '../components/ErrorBoundary';
 
 // pages
 import Home from '../pages/Home';
+import Vehicle from '../pages/Vehicle';
 
 const Routes = () => (
   <Router>
     <Switch>
       <ErrorBoundary>
+        <Route exact path='/:make/:model' component={Vehicle} />
         <Route exact path='/' component={Home} />
       </ErrorBoundary>
     </Switch>

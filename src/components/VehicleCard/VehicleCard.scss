@@ -1,0 +1,23 @@
+.vehicle-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 50px;
+}
+
+.vehicle-card-item {
+  text-align: center;
+  background-color: #FFF;
+  border-radius: 1px;
+  padding: 10px;
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.05);
+
+  p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #3359DB;
+    padding: 6px;
+    margin: 0;
+  }
+}

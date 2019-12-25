@@ -3,12 +3,9 @@ import React, { useState, useEffect } from 'react';
 
 // components
 import SelectBox from '../../components/SelectBox';
-import CardModel from '../../components/CarModel';
+import Model from '../../components/Model';
 import MessageCard from '../../components/MessageCard';
 import ErrorBoundary from '../../components/ErrorBoundary';
-
-// styles
-import './Home.scss';
 
 // others
 import api from '../../api';
@@ -16,7 +13,7 @@ import api from '../../api';
 const Home = () => {
   const { fetchCarMakes } = api;
   const [carMakes, setCarMakes] = useState([]);
-  const [car, setCar] = useState('');
+  const [make, setMake] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
   useEffect(() => {
@@ -35,14 +32,14 @@ const Home = () => {
     <>
       <SelectBox
         options={carMakes}
-        onChange={event => setCar(event.target.value)}
-        value={car}
+        onChange={event => setMake(event.target.value)}
+        value={make}
         name='Car Make'
       />
-      {!car && !errorMessage && (
+      {!make && !errorMessage && (
         <MessageCard message='Hello, Select A Registered Car To Get Started' />
       )}
-      <ErrorBoundary>{car && <CardModel car={car} />}</ErrorBoundary>
+      <ErrorBoundary>{make && <Model make={make} />}</ErrorBoundary>
     </>
   );
 };

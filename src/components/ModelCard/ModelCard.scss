@@ -1,4 +1,4 @@
-.car-model-container {
+.model-card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -6,7 +6,7 @@
   margin-top: 20px;
 }
 
-.card-grid-item {
+.model-card-item {
   text-align: center;
   background-color: #FFF;
   height: 150px;
@@ -14,9 +14,11 @@
   box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.05);
   text-decoration: none;
 
-  .card-value {
+  .model-card-value {
     font-size: 1.25rem;
     font-weight: 300;
     color: #3359DB;
+    padding: 0;
+    margin: 0;
   }
 }

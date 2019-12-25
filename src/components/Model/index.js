@@ -3,48 +3,48 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 // components
-import Card from '../Card';
+import ModelCard from '../ModelCard';
 import MessageCard from '../MessageCard';
 
 // others
 import api from '../../api';
 
-const CarModel = ({ car }) => {
+const Model = ({ make }) => {
   const { fetchCarMakesModels } = api;
-  const [carMakeModels, setCarMakeModels] = useState([]);
+  const [models, setModels] = useState([]);
   const [errorMessage, setErrorMessage] = useState('');
 
   useEffect(() => {
-    fetchCarMakesModels(car)
+    fetchCarMakesModels(make)
       .then(allcarMakeModels => {
-        setCarMakeModels(allcarMakeModels);
+        setModels(allcarMakeModels);
       })
       .catch(error => {
         setErrorMessage(() => {
           throw error;
         });
       });
-  }, [car, fetchCarMakesModels]);
+  }, [make, fetchCarMakesModels]);
 
   return (
     <>
-      <div className='car-model-container'>
-        {carMakeModels.map((carMakeModel, index) => (
+      <div className='model-card-container'>
+        {models.map((model, index) => (
           // eslint-disable-next-line react/no-array-index-key
-          <Card carMakeModel={carMakeModel} key={index} />
+          <ModelCard model={model} key={index} make={make} />
         ))}
       </div>
 
       {/* not found */}
-      {carMakeModels.length === 0 && !errorMessage && (
-        <MessageCard message={`${car} has no Models available`} />
+      {models.length === 0 && !errorMessage && (
+        <MessageCard message={`${make} has no Models available`} />
       )}
     </>
   );
 };
 
-export default CarModel;
+export default Model;
 
-CarModel.propTypes = {
-  car: PropTypes.string.isRequired,
+Model.propTypes = {
+  make: PropTypes.string.isRequired,
 };

@@ -1,15 +1,22 @@
 .message-card-container {
   display: flex;
   justify-content: center;
-  margin-top: 80px;
 
-  .message-card-text {
-    text-align: center;
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
     background-color: #FFF;
-    height: 50px;
+    height: 80px;
     width: 250px;
     padding: 40px;
     border-radius: 1px;
+  }
+
+  .message-card-text {
+    text-align: center;
     color: #3359DB;
     font-size: 1rem;
     font-weight: 300;
