@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.1.2",
     "history": "^4.10.1",
+    "nock": "^11.7.0",
     "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
@@ -18,7 +19,8 @@
     "coveragePathIgnorePatterns": [
       "/node_modules",
       "<rootDir>/src/api/",
-      "<rootDir>/src/serviceWorker.js"
+      "<rootDir>/src/serviceWorker.js",
+      "<rootDir>/src/index.js"
     ]
   },
   "scripts": {

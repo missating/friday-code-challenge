@@ -5,21 +5,19 @@ import { createMemoryHistory } from 'history';
 import { render, cleanup } from '@testing-library/react';
 
 // components
-import MessageCard from './index';
+import Model from './index';
 
 afterEach(cleanup);
 
-const TEST_MSG = 'Test Message';
-
-describe('MessageCard Component', () => {
+describe('Model Component', () => {
   it('renders without crashing', () => {
     const history = createMemoryHistory();
 
     const { getByText } = render(
       <Router history={history}>
-        <MessageCard message={TEST_MSG} />
+        <Model make='Toyota' />
       </Router>
     );
-    expect(getByText('Test Message')).toBeInTheDocument();
+    expect(getByText('Toyota has no Models available')).toBeInTheDocument();
   });
 });
