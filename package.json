@@ -18,7 +18,6 @@
   "jest": {
     "coveragePathIgnorePatterns": [
       "/node_modules",
-      "<rootDir>/src/api/",
       "<rootDir>/src/serviceWorker.js",
       "<rootDir>/src/index.js"
     ]

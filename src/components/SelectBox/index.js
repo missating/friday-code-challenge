@@ -11,6 +11,7 @@ const SelectBox = ({ options, onChange, value, name }) => {
     <>
       <div className='select-box'>
         <select
+          data-testid='select'
           name={name}
           onChange={onChange}
           value={value}
