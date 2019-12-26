@@ -20,7 +20,7 @@ const ModelCard = ({ make, model, history }) => {
   return (
     <Link to={`/${makeUrl}/${modelUrl}`} className='model-card-item '>
       <p className='model-card-value'>{model}</p>
-      <Button name='View' onClick={changeRoute} />
+      <Button name='View' onClick={changeRoute} classes='model-card-btn' />
     </Link>
   );
 };

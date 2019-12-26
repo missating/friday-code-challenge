@@ -1,11 +1,13 @@
+// third-party libraries
 import React from 'react';
-import { render } from '@testing-library/react';
-import App from '.';
+import { render, cleanup } from '@testing-library/react';
+
+// components
+import App from './index';
+
+afterEach(cleanup);
 
 it('renders without crashing', () => {
-  const { container } = render(<App />);
-  expect(container.firstChild.classList.contains('navbar-container')).toBe(
-    true
-  );
-  expect(container).toHaveTextContent('Friday Code Challenge');
+  const { getByText } = render(<App />);
+  expect(getByText('Select Car')).toBeInTheDocument();
 });
