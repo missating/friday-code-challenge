@@ -48,7 +48,7 @@ const Vehicle = ({ location }) => {
       {/* not found */}
       {vehicles.length === 0 && !errorMessage && (
         <MessageCard
-          message={`${model}, ${make} has no Vehicles available`}
+          message={`${make}, ${model} has no Vehicles available`}
           goBack
         />
       )}
