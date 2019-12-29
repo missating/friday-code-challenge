@@ -22,7 +22,7 @@ describe('Vehicle Page', () => {
     );
 
     expect(
-      getByText('ford, fiesta has no Vehicles available')
+      getByText('fiesta, ford has no Vehicles available')
     ).toBeInTheDocument();
   });
 });
