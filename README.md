@@ -20,9 +20,8 @@
 2. To clone, run `https://github.com/missating/friday-code-challenge.git`.
 3. `cd` into the root of the **project directory**.
 4. Install [`yarn`](https://yarnpkg.com/en/docs/install#mac-stable).
-5. Create a `.env` file in the root directory of the application. Example of the content of a `.env` file is shown in the `.env.example`
-6. Run `yarn install` on the terminal to install dependecies.
-7. Run the server
+5. Run `yarn install` on the terminal to install dependecies.
+6. Run the server
 
 ```bash
 node apiserver/server.js
