@@ -2,13 +2,13 @@
 import React, { useState, useEffect } from 'react';
 
 // components
-import SelectBox from '../../components/SelectBox';
-import Model from '../../components/Model';
-import MessageCard from '../../components/MessageCard';
-import ErrorBoundary from '../../components/ErrorBoundary';
+import SelectBox from 'components/SelectBox';
+import Model from 'components/Model';
+import MessageCard from 'components/MessageCard';
+import ErrorBoundary from 'components/ErrorBoundary';
 
 // others
-import api from '../../api';
+import api from 'api';
 
 const Home = () => {
   const { fetchCarMakes } = api;

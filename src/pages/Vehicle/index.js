@@ -3,14 +3,14 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 // components
-import VehicleCard from '../../components/VehicleCard';
-import MessageCard from '../../components/MessageCard';
+import VehicleCard from 'components/VehicleCard';
+import MessageCard from 'components/MessageCard';
 
 // styles
 import './Vehicle.scss';
 
 // others
-import api from '../../api';
+import api from 'api';
 
 const Vehicle = ({ location }) => {
   const make = location.pathname.split('/')[1];

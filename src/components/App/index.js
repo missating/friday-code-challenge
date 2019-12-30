@@ -2,10 +2,10 @@
 import React from 'react';
 
 // components
-import ErrorBoundary from '../ErrorBoundary';
+import ErrorBoundary from 'components/ErrorBoundary';
 
 // routes
-import Routes from '../../routes';
+import Routes from 'routes';
 
 const App = () => (
   <ErrorBoundary>

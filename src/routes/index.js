@@ -3,11 +3,11 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // components
-import ErrorBoundary from '../components/ErrorBoundary';
+import ErrorBoundary from 'components/ErrorBoundary';
 
 // pages
-import Home from '../pages/Home';
-import Vehicle from '../pages/Vehicle';
+import Home from 'pages/Home';
+import Vehicle from 'pages/Vehicle';
 
 const Routes = () => (
   <Router>

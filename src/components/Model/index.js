@@ -3,11 +3,11 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 // components
-import ModelCard from '../ModelCard';
-import MessageCard from '../MessageCard';
+import ModelCard from 'components/ModelCard';
+import MessageCard from 'components/MessageCard';
 
 // others
-import api from '../../api';
+import api from 'api';
 
 const Model = ({ make }) => {
   const { fetchCarMakesModels } = api;

@@ -2,11 +2,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// images
-import car from '../../assets/vehicle.png';
-
 // styles
 import './VehicleCard.scss';
+
+// images
+import car from 'assets/vehicle.png';
 
 const VehicleCard = ({ vehicle }) => {
   return (

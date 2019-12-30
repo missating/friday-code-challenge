@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // components
-import Button from '../Button';
+import Button from 'components/Button';
 
 // styles
 import './ErrorBoundary.scss';

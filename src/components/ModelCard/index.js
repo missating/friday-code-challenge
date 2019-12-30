@@ -3,14 +3,14 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
+// components
+import Button from 'components/Button';
+
 // styles
 import './ModelCard.scss';
 
 // images
-import car from '../../assets/vehicle.png';
-
-// components
-import Button from '../Button';
+import car from 'assets/vehicle.png';
 
 const ModelCard = ({ make, model, history }) => {
   const makeUrl = make.toLowerCase().replace(' ', '-');
