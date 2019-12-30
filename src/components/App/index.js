@@ -1,6 +1,7 @@
 // third-party libraries
 import React from 'react';
 
+// components
 import ErrorBoundary from '../ErrorBoundary';
 
 // routes

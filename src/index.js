@@ -1,7 +1,14 @@
+// third-party libraries
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
+// components
 import App from './components/App';
+
+// styles
+import './index.css';
+
+// others
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
