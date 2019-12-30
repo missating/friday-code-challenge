@@ -9,4 +9,10 @@
   color: #3359DB;
   font-size: 0.8rem;
   font-weight: 300;
+
+  &:hover {
+    background-color: #3359DB;
+    color: #FFF;
+    border: 1px solid #3359DB;
+  }
 }

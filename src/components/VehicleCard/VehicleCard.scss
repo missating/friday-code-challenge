@@ -1,9 +1,10 @@
 .vehicle-card-container {
+  max-width: 100%;
+  margin: 10px auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 10px;
-  margin-top: 50px;
+  grid-gap: 1rem;
+  width: 90%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .vehicle-card-item {

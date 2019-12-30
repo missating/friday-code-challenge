@@ -6,6 +6,9 @@ import PropTypes from 'prop-types';
 // styles
 import './ModelCard.scss';
 
+// images
+import car from '../../assets/vehicle.png';
+
 // components
 import Button from '../Button';
 
@@ -19,6 +22,7 @@ const ModelCard = ({ make, model, history }) => {
 
   return (
     <Link to={`/${makeUrl}/${modelUrl}`} className='model-card-item '>
+      <img src={car} alt='vehicle-placeholder' width='80' />
       <p className='model-card-value'>{model}</p>
       <Button name='View' onClick={changeRoute} classes='model-card-btn' />
     </Link>

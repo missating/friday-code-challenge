@@ -2,12 +2,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// images
+import car from '../../assets/vehicle.png';
+
 // styles
 import './VehicleCard.scss';
 
 const VehicleCard = ({ vehicle }) => {
   return (
     <div className='vehicle-card-item'>
+      <img src={car} alt='car-placeholder' width='80' />
       <p>Engine Power PS: {vehicle.enginePowerPS}</p>
       <p>Engine Power KW: {vehicle.enginePowerKW}</p>
       <p>Fuel Type: {vehicle.fuelType}</p>

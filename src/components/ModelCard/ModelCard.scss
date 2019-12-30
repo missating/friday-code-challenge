@@ -1,9 +1,10 @@
 .model-card-container {
+  max-width: 100%;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 10px;
-  margin-top: 20px;
+  grid-gap: 1rem;
+  width: 90%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .model-card-item {
@@ -18,9 +19,5 @@
     font-size: 1.25rem;
     font-weight: 300;
     color: #3359DB;
-  }
-
-  .model-card-btn {
-    margin-top: 50px;
   }
 }
