@@ -11,12 +11,12 @@ import Vehicle from 'pages/Vehicle';
 
 const Routes = () => (
   <Router>
-    <Switch>
-      <ErrorBoundary>
+    <ErrorBoundary>
+      <Switch>
         <Route exact path='/:make/:model' component={Vehicle} />
         <Route exact path='/' component={Home} />
-      </ErrorBoundary>
-    </Switch>
+      </Switch>
+    </ErrorBoundary>
   </Router>
 );
 
